@@ -153,12 +153,12 @@ After applying the linear mapping learned on the validation set:
 ### Figure 1. Calibration (Uncalibrated)
 Test video-level predictions vs. ground truth MOS (EfficientNet-B3, TTA + trimmed). 
 
-![Figure 1. Uncalibrated scatter](assets/fig1_uncalibrated_scatter.png)
+![Figure 1. Uncalibrated scatter](assets/fig2_uncalibrated_scatter.png)
 
 ### Figure 2. Calibration (Calibrated)
 Test video-level predictions after linear mapping. Dashed line: ideal y = x. 
 
-![Figure 2. Calibrated scatter](assets/fig2_calibrated_scatter.png)
+![Figure 2. Calibrated scatter](assets/fig1_calibrated_scatter.png)
 
 ### Figure 3. Residuals vs MOS (Calibrated)
 Residuals defined as: (True MOS − Predicted MOS). 
@@ -170,10 +170,10 @@ Per-QP analysis indicates high PLCC/SRCC at QP 25–45 and a noticeable drop in 
 
 ![Figure 4. PLCC by QP](assets/fig4_plcc_by_qp.png)
 
-### Figure 8. Grad-CAM examples
+### Figure 5. Grad-CAM examples
 Grad-CAM heatmaps show the model focusing on human figures, edges, textured surfaces, and structurally salient regions, while suppressing background and flat areas. 
 
-![Figure 8. Grad-CAM examples](assets/fig8_gradcam_examples.png)
+![Figure 5. Grad-CAM examples](assets/fig8_gradcam_examples.png)
 
 
 ## 95% Confidence Intervals (Bootstrapped)
